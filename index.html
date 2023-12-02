@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>String Methods</title>
+</head>
+<body>
+<h2><u>Property</u></h2>
+<p>Length</p>
+<h2><u>Method</u></h2>
+<p>CharAt()</p>
+<p>concat()</p>
+<p>replace()</p>
+<p>split()</p>
+<p>substr</p>
+<p>slice()</p>
+<p>toLowercase()</p>
+<p>trim()</p>
+<p>trimStart()</p>
+<p>trimEnd()</p>
+<p>includes()</p>
+<p>match()</p>
+<p>search()</p>
+<p>indexOf()</p>
+<p>lastIndexOf</p>
+<p>startWith()</p>
+<p>endWith()</p>
+<p>padStart()</p>
+<p>padEnd()</p>
+<script>
+let text="arunasankari";
+console.log(text.length);                                            //length
+
+let a="Nandhini";                                 
+console.log(a.charAt(4));                                          //charAt()
+
+let b="Harry";
+let c="Potter";                                     
+let d=b.concat(" ",c);
+console.log(d);                                                          //concat()
+
+let e="Hermione watson";
+console.log(e.replace("watson","Granger"));                                                          //replace()
+
+let f='Hiiii';
+console.log(f.split());                                           //split()
+
+let g="blue, violet,  pink";
+console.log(g.substr(1,5));                             //substr(start,length)
+
+let h="note, pen ,book";
+console.log(h.substring(1,8));                          //substring(start,end)
+
+let i="mango,orange,apple";
+console.log(i.slice(5,13));                                //slice(start,end)
+
+let j="Gmail";
+let k=j.toLowerCase();
+console.log(k);                                                //toLowerCase()
+
+let l="welcome";
+console.log(l.toUpperCase());                 //toUpperCase()
+
+let m="          Hurrah!        ";
+console.log(m.trim());                             //trim()
+
+let n="        Hi!";
+console.log(n.trimStart());                     //trimStart()
+
+let o="Its My Goodness!     ";
+console.log(o.trimEnd());                         //trimEnd()
+
+let p="Hello world,welcome to the universe";
+console.log(p.includes("all"));                 //includes()
+
+let q="you are my sunshine";
+let r=q.match("shin");
+console.log(r);                                             //match()
+
+let s="beautiful life!";
+console.log(s.search("life"));                 //search()
+
+let t="Happy Beginnings!";
+let u=t.indexOf("gs");
+console.log(u);                                          //indexOf()
+ 
+let v="Don't waste water";
+console.log(v.lastIndexOf("was"));           //lastIndexOf()
+
+let w="Arun Arumugam";
+let x=w.startsWith("Arun");                   
+console.log(x);                                               //True
+
+let y=w.startsWith("Aru");                     
+console.log(y);                                               //True
+
+let z=w.startsWith("Mugam'");
+console.log(z);                                            //false   //startWith()
+
+let word1="John Doe";
+let word2=word1.endsWith("Doe");
+console.log(word2);                                 //true
+
+let word3=word1.endsWith("doe");
+console.log(word3);                                 //false     //endsWith()
+
+let num="5";
+console.log(num.padStart(4,"0"));            //padStart()
+
+let num1="10";
+console.log(num1.padEnd(8,"1"));          //padEnd()
+
+</script>
+</body>
+</html>
